@@ -16,11 +16,11 @@ namespace Linq
         static void MayorQueUno()
         {
             var numbers = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8 };
-            //Where recibe un entero y devuelve un booleano => "Fun<int, bool> predicate"    
+            //Where recibe un tipo de dato "T" y devuelve un booleano => "Fun<"T", bool> predicate"    
             var bt1 = numbers.Where(Predicate);
         }
 
-        //Por lo que Predicate debe recibir dicho entero y recibir el booleano
+        //Por lo que Predicate debe recibir dicho tipo de dato "T" y recibir el booleano
         static bool Predicate(int value)
         {
             return value > 1;
