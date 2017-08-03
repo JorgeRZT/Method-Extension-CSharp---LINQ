@@ -32,8 +32,7 @@ namespace Linq
             var bt1 = numbers.Where(Predicate);
             //Has que no se haga un "foreach" (iteración) no se ejecuta el Where de manera que entregue la condición establecida
             //en la función Predicate(int)
-            foreach(var value in bt1) { }
-            
+            foreach(var value in bt1) { }          
         }
 
         static IEnumerable<int> Iterator()
